@@ -1,0 +1,22 @@
+CREATE DATABASE  IF NOT EXISTS `web_bike_adverts` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `web_bike_adverts`;
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+DROP TABLE IF EXISTS `bike_adverts`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `bike_adverts` (   `id` int(11) NOT NULL AUTO_INCREMENT,   `company_name` varchar(45) DEFAULT NULL,   `model_name` varchar(45) DEFAULT NULL,   `cylinder` int DEFAULT NULL,   `build_year` int DEFAULT NULL,   `kms` int DEFAULT NULL,   `price` int DEFAULT NULL,   PRIMARY KEY (`id`) ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+LOCK TABLES `bike_adverts` WRITE;
+/*!40000 ALTER TABLE `bike_adverts` DISABLE KEYS */;
+INSERT INTO `bike_adverts` VALUES   (1,'yamaha','t7','700','2019','3000','9800'),  (2,'triumph','tigerXc','800','2011','30000','6700'),  (3,'BMW','gs800','800','2008','50000','6500'),  (4,'ktm','adventure1090','1090','2015','19000','7700'),  (5,'ducati','multistrada','750','2013','28000','8800');
+SELECT * FROM web_bike_adverts.bike_adverts LIMIT 0, 1000;
+
